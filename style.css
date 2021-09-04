@@ -1,0 +1,454 @@
+/* Universal */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/* Particle Background */
+.background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* Fonts - 1.250 Major Third */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+
+html {
+    font-size: 100%;
+}
+
+/*16px*/
+
+body {
+    background: #495F74;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 2;
+    color: #A7B1BF;
+}
+
+p {
+    margin-bottom: 1rem;
+    margin: 0;
+    line-height: 200%;
+    text-align: center;
+}
+
+h1 {
+    color: #DFDFDF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 3rem 0 1.38rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+    color: white;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+}
+
+h2 {
+    font-size: 2.441rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.953rem;
+}
+
+h4 {
+    font-size: 1.563rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+small,
+.text_small {
+    font-size: 0.8rem;
+}
+
+
+/* --------------------------------------------------Header-------------------------------------------------- */
+.container-1 {
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr 0.6fr;
+    grid-template-rows: 150px auto auto;
+    gap: 0px 0px;
+    background-color: #15101994;
+    position: relative;
+}
+
+
+.Header-IMG {
+    grid-area: 1 / 3 / 4 / 4;
+    background: url(Image/Pedel\ Speech.png);
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-position: right;
+}
+
+.Header-Content {
+    grid-area: 2 / 2 / 3 / 3;
+    padding: 100px;
+
+}
+
+.Header-Content p {
+    text-align: left;
+}
+
+.Icon {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.Scroll-Icon {
+    grid-area: 3 / 2 / 4 / 3;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.Twitter-Icon {
+    grid-area: 2 / 1 / 3 / 2;
+    background: url(Image/2021\ Twitter\ logo\ -\ blue\ 1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/* --------------------------------------------------Introduction-------------------------------------------------- */
+.container-2 {
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr 0.6fr;
+    grid-template-rows: auto auto auto 200px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". Contextualise ."
+        ". Intro-Trump ."
+        ". Tweet-By-Year ."
+        "Quote Quote Quote";
+}
+
+.Contextualise {
+    grid-area: Contextualise;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.Intro-Trump {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Trump-Intro-Img Intro-Content";
+    grid-area: Intro-Trump;
+    padding-bottom: 100px;
+
+}
+
+.Trump-Intro-Img {
+    grid-area: Trump-Intro-Img;
+    padding-top: 50px;
+}
+
+.Intro-Content {
+    grid-area: Intro-Content;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.Intro-Content h2,
+p {
+    text-align: left;
+}
+
+.Tweet-By-Year {
+    grid-area: Tweet-By-Year;
+    padding-bottom: 80px;
+    align-content: center;
+}
+
+.Quote {
+    grid-area: Quote;
+    text-align: center;
+    padding: 20px;
+    background-color: #15101975;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.Quote p {
+    text-align: center;
+}
+
+/* -------------------------------------------------- Sec I - Linguistic: Art of Speech --------------------------------------------------*/
+.container-3 {
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr 0.6fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". Sec1-Intro ."
+        ". WordCloud ."
+        ". Word-Language ."
+        ". Readability-Scale ."
+        ". Sec1-End .";
+}
+
+.Sec1-Intro {
+    grid-area: Sec1-Intro;
+}
+
+.WordCloud {
+    grid-area: WordCloud;
+    text-align: center;
+}
+
+.Word-Language {
+    grid-area: Word-Language;
+}
+
+.Readability-Scale {
+    grid-area: Readability-Scale;
+    padding: 50px 10px;
+
+}
+
+.Sec1-End {
+    grid-area: Sec1-End;
+}
+
+
+
+
+/* --------------------------------------------------Sec II - Sentiment Analysis-------------------------------------------------- */
+.container-4 {
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr 0.6fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". Sec2-Intro ."
+        ". Sentiment-Cluster ."
+        ". Cluster-Summarise ."
+        ". Difference-in-speak-Intro ."
+        ". Hover-Quote ."
+        ". Sec2-End .";
+}
+
+.Sec2-Intro {
+    grid-area: Sec2-Intro;
+}
+
+.Sentiment-Cluster {
+    grid-area: Sentiment-Cluster;
+    background-color: #15101975;
+    padding: 10px 100px;
+}
+
+
+
+
+/* Input Area */
+
+/* Overall Input Div */
+.input-group {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 5px;
+    background-color: CBCBCB;
+    margin: auto;
+    padding: 3px
+}
+
+/* Input Field */
+.form-control {
+    position: absolute;
+    text-align: left;
+    background-color: #CBCBCB;
+    width: 450px;
+    padding: 8px;
+    border: 0 !important;
+    border-radius: 2px !important;
+    margin: 2px;
+    box-shadow: none !important;
+    opacity: 0.8;
+}
+
+::placeholder {
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+
+/* Button */
+.input-group-text {
+
+    align-items: center;
+    width: 100px;
+    border: 0 !important;
+    background-color: #1D9BF0;
+    color: #FFFFFF;
+    opacity: 0.8;
+    padding: 8px !important;
+    border-radius: 2px !important;
+    box-shadow: wheat !important;
+}
+
+/* Button Field */
+.input-group-append {
+    width: 560px;
+    text-align: right;
+}
+
+
+
+/* End of Input Area */
+
+.Cluster-Summarise {
+    grid-area: Cluster-Summarise;
+    padding: 30px;
+}
+
+.Difference-in-speak-Intro {
+    grid-area: Difference-in-speak-Intro;
+    padding-bottom: 50px;
+}
+
+.Hover-Quote {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Trump-Hover Obama-Hover";
+    grid-area: Hover-Quote;
+}
+
+.Trump-Hover {
+    grid-area: Trump-Hover;
+    padding: 10px;
+    position: relative;
+    width: 50%
+}
+
+.Obama-Hover {
+    grid-area: Obama-Hover;
+    padding: 10px;
+    position: relative;
+}
+
+/* Overlay Interaction */
+.Trump-Hover norm-img,
+.Obama-Hover norm-img {
+    display: absolute;
+}
+
+.overlay-img {
+    position: absolute;
+    opacity: 0.0;
+    transition: opacity 0.25s
+}
+
+.overlay-img:hover {
+    opacity: 1;
+}
+
+
+.Sec2-End {
+    grid-area: Sec2-End;
+    padding-top: 50px;
+}
+
+
+
+
+
+/* --------------------------------------------------Conclusion-------------------------------------------------- */
+.container-5 {
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr 0.6fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". Conclusion .";
+    padding-bottom: 30px;
+}
+
+.Conclusion {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Conclusion-Img Conclusion-Content";
+    grid-area: Conclusion;
+}
+
+.Conclusion-Img {
+    grid-area: Conclusion-Img;
+}
+
+.Conclusion-Content {
+    grid-area: Conclusion-Content;
+    padding-left: 50px;
+}
+
+.Conclusion-Content h3 {
+    margin-top: 0;
+
+}
+
+
+
+/* --------------------------------------------------Rererence Footer-------------------------------------------------- */
+
+footer {
+    padding: 10px 70px 40px 200px;
+    align-items: center;
+    text-align: left;
+    background-color: rgba(192, 211, 254, 0.164);
+    color: #E9E9E9;
+}
+
+footer p {
+    font-size: 10px;
+    text-align: left;
+}
+
+/* Seperator */
+.seperator {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 100px 0px;
+}
